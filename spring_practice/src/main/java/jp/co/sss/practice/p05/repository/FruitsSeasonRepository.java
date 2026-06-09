@@ -11,4 +11,7 @@ public interface FruitsSeasonRepository extends JpaRepository<FruitsSeason, Inte
 	//昇順に並べ替え昇順の（Asc）は省略可能
 	List<FruitsSeason> findAllByOrderBySeasonMonthAsc();
 
+	//id列で昇順に並べ替え
+	List<FruitsSeason> findAllByOrderByFruitId();
+
 }
